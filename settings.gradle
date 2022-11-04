@@ -1,0 +1,2 @@
+rootProject.name = "MundoMascota"
+include ':app'
