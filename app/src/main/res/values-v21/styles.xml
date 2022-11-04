@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MiBotonRaised" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/blanco</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:elevation">20dp</item>
+    </style>
+</resources>

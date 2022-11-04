@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ACTION BAR-->
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="tamaño_texto_titulo_actionbar">18sp</dimen>
+    <dimen name="tamaño_texto_tituloCandHard_actionbar">18sp</dimen>
+    <dimen name="width_patita_actionbar">34dp</dimen>
+    <dimen name="height_patita_actionbar">34dp</dimen>
+    <dimen name="width_estrella_actionbar">34dp</dimen>
+    <dimen name="height_estrella_actionbar">34dp</dimen>
+    <dimen name="width_foto_mascota">120dp</dimen>
+    <dimen name="height_foto_mascota">120dp</dimen>
+    <dimen name="width_foto_huesolike">40dp</dimen>
+    <dimen name="height_foto_huesolike">40dp</dimen>
+
+    <!--ACTIVITY - ENVIAR COMENTARIO (EC)-->
+    <dimen name="EC_cardView_MarginTop">100dp</dimen>
+    <dimen name="EC_cardView_MarginBotton">100dp</dimen>
+    <dimen name="EC_cardView_MarginEnd">10dp</dimen>
+    <dimen name="EC_cardView_MarginStart">10dp</dimen>
+
+    <!--FRAGMENT - PERFIL (FP)-->
+    <dimen name="FP_width_foto_perfil">120dp</dimen>
+    <dimen name="FP_height_foto_perfil">120dp</dimen>
+    <dimen name="FP_height_barra_negra">2dp</dimen>
+    <dimen name="FP_margin_barra_negra">8dp</dimen>
+    <dimen name="FP_margin_top_nombre_perfil">8dp</dimen>
+    <dimen name="FP_tamaño_texto_nombre_perfil">24sp</dimen>
+    <dimen name="FP_width_foto_fragment">100dp</dimen>
+    <dimen name="FP_height_foto_fragment">100dp</dimen>
+    <dimen name="FP_width_foto_hueso_fragment">30dp</dimen>
+    <dimen name="FP_height_foto_hueso_fragment">30dp</dimen>
+
+    <!--ACTIVITY - INFO DESARROLADOR (ID)-->
+    <dimen name="ID_width_foto_info">140dp</dimen>
+    <dimen name="ID_height_foto_info">140dp</dimen>
+    <dimen name="ID_tamaño_texto_nombre_info">20sp</dimen>
+
+</resources>
