@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:background="@color/gris_claro"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ActionBarContacto"
+        layout="@layout/actionbar_hard">
+    </include>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clContacto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/EC_cardView_MarginStart"
+        android:layout_marginLeft="@dimen/EC_cardView_MarginStart"
+        android:layout_marginTop="@dimen/EC_cardView_MarginTop"
+        android:layout_marginEnd="@dimen/EC_cardView_MarginEnd"
+        android:layout_marginRight="@dimen/EC_cardView_MarginEnd"
+        android:layout_marginBottom="@dimen/EC_cardView_MarginBotton"
+        android:animateLayoutChanges="true"
+        android:padding="4dp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliNombreContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/icon_persona"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/etNombreContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints="0"
+                    android:ems="10"
+                    android:hint="@string/hint_nombreContacto"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliEmailContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliNombreContacto"
+                app:startIconDrawable="@drawable/icon_email"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/etEmailContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints="0"
+                    android:ems="10"
+                    android:hint="@string/hint_emailContacto"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tliMensajeContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tliEmailContacto"
+                app:startIconDrawable="@drawable/icon_mensaje"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/etMensajeContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints="0"
+                    android:ems="10"
+                    android:hint="@string/hint_mensajeContacto"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:layout_marginStart="@dimen/EC_cardView_MarginStart"
+        android:layout_marginEnd="@dimen/EC_cardView_MarginEnd"
+        android:text="@string/hint_btnEnviar"
+        android:theme="@style/MiBotonRaised"
+        android:drawableEnd="@drawable/icon_enviar"
+        app:layout_constraintEnd_toEndOf="@+id/clContacto"
+        app:layout_constraintStart_toStartOf="@+id/clContacto"
+        app:layout_constraintTop_toBottomOf="@+id/clContacto"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/EC_cardView_MarginStart"
+        android:layout_marginRight="@dimen/EC_cardView_MarginEnd"
+        android:drawableRight="@drawable/icon_enviar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

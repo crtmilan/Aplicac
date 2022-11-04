@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="10sp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/clFondoBases"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFotoMascotaPerfil"
+            android:layout_width="@dimen/FP_width_foto_fragment"
+            android:layout_height="@dimen/FP_height_foto_fragment"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/odie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/ivHuesoLikePerfil"
+            android:layout_width="@dimen/FP_width_foto_hueso_fragment"
+            android:layout_height="@dimen/FP_height_foto_hueso_fragment"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hueso_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivFotoMascotaPerfil"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoMascotaPerfil"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvCantHuesoLikePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/cant_huesolike_1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHuesoLikePerfil"
+            app:layout_constraintEnd_toStartOf="@+id/ivHuesoLikePerfil"
+            app:layout_constraintTop_toTopOf="@+id/ivHuesoLikePerfil"
+            android:layout_marginRight="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

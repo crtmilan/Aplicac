@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevacion_actionbar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPatitaActionBar"
+            android:layout_width="@dimen/width_patita_actionbar"
+            android:layout_height="@dimen/height_patita_actionbar"
+            android:src="@drawable/icon_patita"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvTituloActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tamaño_texto_titulo_actionbar"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivEstrellaHard"
+            android:layout_width="@dimen/width_estrella_actionbar"
+            android:layout_height="@dimen/height_estrella_actionbar"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_estrella"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTituloCantHard"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_titulohard"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/tamaño_texto_tituloCandHard_actionbar"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEstrellaHard"
+            app:layout_constraintEnd_toEndOf="@+id/ivEstrellaHard"
+            app:layout_constraintStart_toStartOf="@+id/ivEstrellaHard"
+            app:layout_constraintTop_toTopOf="@+id/ivEstrellaHard"
+            android:gravity="center_horizontal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

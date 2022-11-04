@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.fragment.PerfilFragment"
+    tools:ignore="MissingClass">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivFotoPerfil"
+        android:layout_width="@dimen/FP_width_foto_perfil"
+        android:layout_height="@dimen/FP_height_foto_perfil"
+        android:src="@drawable/riendo_perfil"
+        app:civ_border_color="@color/negro"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNombrePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_nombreContacto"
+        android:textSize="@dimen/FP_tamaño_texto_nombre_perfil"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/FP_margin_top_nombre_perfil"
+        app:layout_constraintEnd_toEndOf="@+id/ivFotoPerfil"
+        app:layout_constraintStart_toStartOf="@+id/ivFotoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/ivFotoPerfil"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvBarraNegra"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FP_height_barra_negra"
+        android:layout_margin="@dimen/FP_margin_barra_negra"
+        android:background="@color/negro"
+        app:layout_constraintEnd_toEndOf="@+id/tvNombrePerfil"
+        app:layout_constraintStart_toStartOf="@+id/tvNombrePerfil"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombrePerfil" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPerfilMascota"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarraNegra"
+        tools:listitem="@layout/recyclerview_perfilmascota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
